@@ -1,0 +1,28 @@
+<?xml version="1.0"?>
+<package format="2">
+  <name>extermination_control</name>
+  <version>0.0.0</version>
+  <description>Extermination control</description>
+  <maintainer email="jt8919@student.ubc.ca">Jennifer T</maintainer>
+  <license>TODO</license>
+
+  <build_depend>roscpp</build_depend>
+  <build_depend>geometry_msgs</build_depend>
+  <build_depend>tf2</build_depend>
+  <build_depend>tf2_ros</build_depend>
+  <build_depend>tf_conversions</build_depend>
+
+  <exec_depend>roscpp</exec_depend>
+  <exec_depend>geometry_msgs</exec_depend>
+  <exec_depend>tf2</exec_depend>
+  <exec_depend>tf2_ros</exec_depend>
+  <exec_depend>tf_conversions</exec_depend>
+
+  <build_depend>rospy</build_depend>
+  <exec_depend>rospy</exec_depend>
+
+  <buildtool_depend>catkin</buildtool_depend>
+  <export>
+  </export>
+</package>
+
