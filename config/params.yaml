@@ -1,0 +1,10 @@
+#Parameter Server#
+
+bot_width: 0.65
+bot_length: 1
+bot_height: 0.8
+bot_velocity: 0.5
+whacker_arm: 0.15
+whacker_radius: 0.10
+threshold_distance: 5
+nozzle_spray_angle: 0.5236

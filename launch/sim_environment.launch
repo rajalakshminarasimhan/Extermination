@@ -1,0 +1,15 @@
+<launch>
+    <param name="robot_description" command="xacro '$(find extermination_control)/urdf/robot.xacro'" />
+
+    <node name="joint_state_publisher" pkg="joint_state_publisher" type="joint_state_publisher" />
+    <node name="robot_state_publisher" pkg="robot_state_publisher" type="robot_state_publisher" />
+    
+    <node pkg  = "extermination_control"
+          type = "image_rec_sim.py"
+          name = "image_rec_sim"/>
+
+    <node pkg  = "rviz"
+          type = "rviz"
+          name = "extermination_rviz"
+          args = "-d $(find extermination_control)/rviz/sim.rviz"/>
+</launch>

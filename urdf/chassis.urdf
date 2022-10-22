@@ -1,0 +1,10 @@
+<robot name="agrobot">
+    <link name="chassis">
+        <visual>
+            <geometry>
+                <box size="1 1 1"/>
+            </geometry>
+        </visual>
+    </link>
+</robot>
+

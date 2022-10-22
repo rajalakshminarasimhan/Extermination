@@ -1,0 +1,17 @@
+<launch>
+    <rosparam command = "load"
+              file = "$(find extermination_control)/config/params.yaml"/>
+
+    <node   pkg  = "extermination_control"
+            type = "weed_sorting.py"
+            name = "weed_sorting"/>
+
+    <node   pkg  = "extermination_control"
+            type = "sprayers.py"
+            name = "sprayers"/>
+
+    <node   pkg  = "extermination_control"
+            type = "navigation_sim.py"
+            name = "navigation_sim"/>
+
+</launch>

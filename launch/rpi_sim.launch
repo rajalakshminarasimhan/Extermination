@@ -1,0 +1,14 @@
+<launch>
+    <param name="robot_description" command="xacro '$(find extermination_control)/urdf/robot.xacro'" />
+
+    <!-- Rpi dependencies -->   
+	<include file="$(find extermination_control)/launch/rpi.launch"></include>
+
+    <node name="joint_state_publisher" pkg="joint_state_publisher" type="joint_state_publisher" />
+    <node name="robot_state_publisher" pkg="robot_state_publisher" type="robot_state_publisher" />
+    
+    <node pkg  = "rviz"
+        type = "rviz"
+        name = "extermination_rviz"
+        args = "-d $(find extermination_control)/rviz/sim.rviz"/>
+</launch>

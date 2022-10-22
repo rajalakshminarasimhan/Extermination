@@ -1,0 +1,627 @@
+Panels:
+  - Class: rviz/Displays
+    Help Height: 78
+    Name: Displays
+    Property Tree Widget:
+      Expanded:
+        - /Global Options1
+        - /Status1
+        - /Grid1
+        - /TF1
+        - /Pose1
+        - /Pose2
+        - /Marker1
+      Splitter Ratio: 0.5
+    Tree Height: 416
+  - Class: rviz/Selection
+    Name: Selection
+  - Class: rviz/Tool Properties
+    Expanded:
+      - /2D Pose Estimate1
+      - /2D Nav Goal1
+      - /Publish Point1
+    Name: Tool Properties
+    Splitter Ratio: 0.5886790156364441
+  - Class: rviz/Views
+    Expanded:
+      - /Current View1
+    Name: Views
+    Splitter Ratio: 0.5
+  - Class: rviz/Time
+    Experimental: false
+    Name: Time
+    SyncMode: 0
+    SyncSource: ""
+Preferences:
+  PromptSaveOnExit: true
+Toolbars:
+  toolButtonStyle: 2
+Visualization Manager:
+  Class: ""
+  Displays:
+    - Alpha: 0.5
+      Cell Size: 1
+      Class: rviz/Grid
+      Color: 160; 160; 164
+      Enabled: true
+      Line Style:
+        Line Width: 0.029999999329447746
+        Value: Lines
+      Name: Grid
+      Normal Cell Count: 0
+      Offset:
+        X: 0
+        Y: 0
+        Z: 0
+      Plane: XY
+      Plane Cell Count: 10
+      Reference Frame: <Fixed Frame>
+      Value: true
+    - Class: rviz/TF
+      Enabled: true
+      Frame Timeout: 15
+      Frames:
+        All Enabled: true
+        chassis:
+          Value: true
+        leg_BL:
+          Value: true
+        leg_BR:
+          Value: true
+        leg_FL:
+          Value: true
+        leg_FR:
+          Value: true
+        weed0:
+          Value: true
+        weed1:
+          Value: true
+        weed10:
+          Value: true
+        weed11:
+          Value: true
+        weed12:
+          Value: true
+        weed13:
+          Value: true
+        weed14:
+          Value: true
+        weed15:
+          Value: true
+        weed16:
+          Value: true
+        weed17:
+          Value: true
+        weed18:
+          Value: true
+        weed19:
+          Value: true
+        weed2:
+          Value: true
+        weed20:
+          Value: true
+        weed21:
+          Value: true
+        weed22:
+          Value: true
+        weed23:
+          Value: true
+        weed24:
+          Value: true
+        weed25:
+          Value: true
+        weed26:
+          Value: true
+        weed27:
+          Value: true
+        weed28:
+          Value: true
+        weed29:
+          Value: true
+        weed3:
+          Value: true
+        weed30:
+          Value: true
+        weed31:
+          Value: true
+        weed32:
+          Value: true
+        weed33:
+          Value: true
+        weed34:
+          Value: true
+        weed35:
+          Value: true
+        weed36:
+          Value: true
+        weed37:
+          Value: true
+        weed38:
+          Value: true
+        weed39:
+          Value: true
+        weed4:
+          Value: true
+        weed40:
+          Value: true
+        weed41:
+          Value: true
+        weed42:
+          Value: true
+        weed43:
+          Value: true
+        weed44:
+          Value: true
+        weed45:
+          Value: true
+        weed46:
+          Value: true
+        weed47:
+          Value: true
+        weed48:
+          Value: true
+        weed49:
+          Value: true
+        weed5:
+          Value: true
+        weed50:
+          Value: true
+        weed51:
+          Value: true
+        weed52:
+          Value: true
+        weed53:
+          Value: true
+        weed54:
+          Value: true
+        weed55:
+          Value: true
+        weed56:
+          Value: true
+        weed57:
+          Value: true
+        weed58:
+          Value: true
+        weed59:
+          Value: true
+        weed6:
+          Value: true
+        weed60:
+          Value: true
+        weed61:
+          Value: true
+        weed62:
+          Value: true
+        weed63:
+          Value: true
+        weed64:
+          Value: true
+        weed65:
+          Value: true
+        weed66:
+          Value: true
+        weed67:
+          Value: true
+        weed68:
+          Value: true
+        weed69:
+          Value: true
+        weed7:
+          Value: true
+        weed70:
+          Value: true
+        weed71:
+          Value: true
+        weed72:
+          Value: true
+        weed73:
+          Value: true
+        weed74:
+          Value: true
+        weed75:
+          Value: true
+        weed76:
+          Value: true
+        weed77:
+          Value: true
+        weed78:
+          Value: true
+        weed79:
+          Value: true
+        weed8:
+          Value: true
+        weed80:
+          Value: true
+        weed81:
+          Value: true
+        weed82:
+          Value: true
+        weed83:
+          Value: true
+        weed84:
+          Value: true
+        weed85:
+          Value: true
+        weed86:
+          Value: true
+        weed87:
+          Value: true
+        weed9:
+          Value: true
+        wheel_FL:
+          Value: true
+        wheel_FR:
+          Value: true
+        wheel_RL:
+          Value: true
+        wheel_RR:
+          Value: true
+        world:
+          Value: true
+      Marker Scale: 1
+      Name: TF
+      Show Arrows: false
+      Show Axes: true
+      Show Names: true
+      Tree:
+        world:
+          chassis:
+            leg_BL:
+              {}
+            leg_BR:
+              {}
+            leg_FL:
+              {}
+            leg_FR:
+              {}
+            wheel_FL:
+              {}
+            wheel_FR:
+              {}
+            wheel_RL:
+              {}
+            wheel_RR:
+              {}
+          weed0:
+            {}
+          weed1:
+            {}
+          weed10:
+            {}
+          weed11:
+            {}
+          weed12:
+            {}
+          weed13:
+            {}
+          weed14:
+            {}
+          weed15:
+            {}
+          weed16:
+            {}
+          weed17:
+            {}
+          weed18:
+            {}
+          weed19:
+            {}
+          weed2:
+            {}
+          weed20:
+            {}
+          weed21:
+            {}
+          weed22:
+            {}
+          weed23:
+            {}
+          weed24:
+            {}
+          weed25:
+            {}
+          weed26:
+            {}
+          weed27:
+            {}
+          weed28:
+            {}
+          weed29:
+            {}
+          weed3:
+            {}
+          weed30:
+            {}
+          weed31:
+            {}
+          weed32:
+            {}
+          weed33:
+            {}
+          weed34:
+            {}
+          weed35:
+            {}
+          weed36:
+            {}
+          weed37:
+            {}
+          weed38:
+            {}
+          weed39:
+            {}
+          weed4:
+            {}
+          weed40:
+            {}
+          weed41:
+            {}
+          weed42:
+            {}
+          weed43:
+            {}
+          weed44:
+            {}
+          weed45:
+            {}
+          weed46:
+            {}
+          weed47:
+            {}
+          weed48:
+            {}
+          weed49:
+            {}
+          weed5:
+            {}
+          weed50:
+            {}
+          weed51:
+            {}
+          weed52:
+            {}
+          weed53:
+            {}
+          weed54:
+            {}
+          weed55:
+            {}
+          weed56:
+            {}
+          weed57:
+            {}
+          weed58:
+            {}
+          weed59:
+            {}
+          weed6:
+            {}
+          weed60:
+            {}
+          weed61:
+            {}
+          weed62:
+            {}
+          weed63:
+            {}
+          weed64:
+            {}
+          weed65:
+            {}
+          weed66:
+            {}
+          weed67:
+            {}
+          weed68:
+            {}
+          weed69:
+            {}
+          weed7:
+            {}
+          weed70:
+            {}
+          weed71:
+            {}
+          weed72:
+            {}
+          weed73:
+            {}
+          weed74:
+            {}
+          weed75:
+            {}
+          weed76:
+            {}
+          weed77:
+            {}
+          weed78:
+            {}
+          weed79:
+            {}
+          weed8:
+            {}
+          weed80:
+            {}
+          weed81:
+            {}
+          weed82:
+            {}
+          weed83:
+            {}
+          weed84:
+            {}
+          weed85:
+            {}
+          weed86:
+            {}
+          weed87:
+            {}
+          weed9:
+            {}
+      Update Interval: 0
+      Value: true
+    - Alpha: 1
+      Axes Length: 1
+      Axes Radius: 0.10000000149011612
+      Class: rviz/Pose
+      Color: 255; 25; 0
+      Enabled: true
+      Head Length: 0.10000000149011612
+      Head Radius: 0.05000000074505806
+      Name: Pose
+      Shaft Length: 0.20000000298023224
+      Shaft Radius: 0.009999999776482582
+      Shape: Arrow
+      Topic: /left_sprayer_aim
+      Unreliable: false
+      Value: true
+    - Alpha: 1
+      Axes Length: 1
+      Axes Radius: 0.10000000149011612
+      Class: rviz/Pose
+      Color: 255; 25; 0
+      Enabled: true
+      Head Length: 0.10000000149011612
+      Head Radius: 0.05000000074505806
+      Name: Pose
+      Shaft Length: 0.20000000298023224
+      Shaft Radius: 0.009999999776482582
+      Shape: Arrow
+      Topic: /right_sprayer_aim
+      Unreliable: false
+      Value: true
+    - Alpha: 1
+      Class: rviz/RobotModel
+      Collision Enabled: false
+      Enabled: true
+      Links:
+        All Links Enabled: true
+        Expand Joint Details: false
+        Expand Link Details: false
+        Expand Tree: false
+        Link Tree Style: Links in Alphabetic Order
+        chassis:
+          Alpha: 1
+          Show Axes: false
+          Show Trail: false
+          Value: true
+        leg_BL:
+          Alpha: 1
+          Show Axes: false
+          Show Trail: false
+          Value: true
+        leg_BR:
+          Alpha: 1
+          Show Axes: false
+          Show Trail: false
+          Value: true
+        leg_FL:
+          Alpha: 1
+          Show Axes: false
+          Show Trail: false
+          Value: true
+        leg_FR:
+          Alpha: 1
+          Show Axes: false
+          Show Trail: false
+          Value: true
+        wheel_FL:
+          Alpha: 1
+          Show Axes: false
+          Show Trail: false
+          Value: true
+        wheel_FR:
+          Alpha: 1
+          Show Axes: false
+          Show Trail: false
+          Value: true
+        wheel_RL:
+          Alpha: 1
+          Show Axes: false
+          Show Trail: false
+          Value: true
+        wheel_RR:
+          Alpha: 1
+          Show Axes: false
+          Show Trail: false
+          Value: true
+      Name: RobotModel
+      Robot Description: robot_description
+      TF Prefix: ""
+      Update Interval: 0
+      Value: true
+      Visual Enabled: true
+    - Class: rviz/Marker
+      Enabled: true
+      Marker Topic: visualization_marker
+      Name: Marker
+      Namespaces:
+        {}
+      Queue Size: 100
+      Value: true
+  Enabled: true
+  Global Options:
+    Background Color: 48; 48; 48
+    Default Light: true
+    Fixed Frame: chassis
+    Frame Rate: 30
+  Name: root
+  Tools:
+    - Class: rviz/Interact
+      Hide Inactive Objects: true
+    - Class: rviz/MoveCamera
+    - Class: rviz/Select
+    - Class: rviz/FocusCamera
+    - Class: rviz/Measure
+    - Class: rviz/SetInitialPose
+      Theta std deviation: 0.2617993950843811
+      Topic: /initialpose
+      X std deviation: 0.5
+      Y std deviation: 0.5
+    - Class: rviz/SetGoal
+      Topic: /move_base_simple/goal
+    - Class: rviz/PublishPoint
+      Single click: true
+      Topic: /clicked_point
+  Value: true
+  Views:
+    Current:
+      Class: rviz/Orbit
+      Distance: 6.012105941772461
+      Enable Stereo Rendering:
+        Stereo Eye Separation: 0.05999999865889549
+        Stereo Focal Distance: 1
+        Swap Stereo Eyes: false
+        Value: false
+      Focal Point:
+        X: 0
+        Y: 0
+        Z: 0
+      Focal Shape Fixed Size: true
+      Focal Shape Size: 0.05000000074505806
+      Invert Z Axis: false
+      Name: Current View
+      Near Clip Distance: 0.009999999776482582
+      Pitch: 0.9053976535797119
+      Target Frame: <Fixed Frame>
+      Value: Orbit (rviz)
+      Yaw: 0.12537787854671478
+    Saved: ~
+Window Geometry:
+  Displays:
+    collapsed: false
+  Height: 713
+  Hide Left Dock: false
+  Hide Right Dock: false
+  QMainWindow State: 000000ff00000000fd0000000400000000000001560000022bfc0200000008fb0000001200530065006c0065006300740069006f006e00000001e10000009b0000005c00fffffffb0000001e0054006f006f006c002000500072006f007000650072007400690065007302000001ed000001df00000185000000a3fb000000120056006900650077007300200054006f006f02000001df000002110000018500000122fb000000200054006f006f006c002000500072006f0070006500720074006900650073003203000002880000011d000002210000017afb000000100044006900730070006c006100790073010000003d0000022b000000c900fffffffb0000002000730065006c0065006300740069006f006e00200062007500660066006500720200000138000000aa0000023a00000294fb00000014005700690064006500530074006500720065006f02000000e6000000d2000003ee0000030bfb0000000c004b0069006e0065006300740200000186000001060000030c00000261000000010000010f0000022bfc0200000003fb0000001e0054006f006f006c002000500072006f00700065007200740069006500730100000041000000780000000000000000fb0000000a00560069006500770073010000003d0000022b000000a400fffffffb0000001200530065006c0065006300740069006f006e010000025a000000b200000000000000000000000200000490000000a9fc0100000001fb0000000a00560069006500770073030000004e00000080000002e10000019700000003000005130000003efc0100000002fb0000000800540069006d0065010000000000000513000002eb00fffffffb0000000800540069006d00650100000000000004500000000000000000000002a20000022b00000004000000040000000800000008fc0000000100000002000000010000000a0054006f006f006c00730100000000ffffffff0000000000000000
+  Selection:
+    collapsed: false
+  Time:
+    collapsed: false
+  Tool Properties:
+    collapsed: false
+  Views:
+    collapsed: false
+  Width: 1299
+  X: 67
+  Y: 27

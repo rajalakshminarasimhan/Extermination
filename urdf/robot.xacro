@@ -1,0 +1,208 @@
+<?xml version='1.0'?>
+
+<robot name="robot" xmlns:xacro="http://www.ros.org/wiki/xacro">
+
+  <xacro:property name="chassis_width" value="0.65"/>
+  <xacro:property name="chassis_length" value="1"/>
+  <xacro:property name="chassis_height" value="0.05"/>
+  <xacro:property name="chassis_mass" value="1.0"/>
+  <xacro:property name="wheel_radius" value="0.1"/>
+  <xacro:property name="wheel_width" value="0.03"/>
+  <xacro:property name="wheel_mass" value="0.5"/>
+  <xacro:property name="leg_length" value="0.05"/>
+  <xacro:property name="leg_width" value="0.05"/>
+  <xacro:property name="leg_height" value="0.75"/>
+  <xacro:property name="leg_mass" value="0.4"/>
+  <link name='chassis'>
+    <collision name='chassis_collision'>
+      <geometry>
+        <box size="${chassis_length} ${chassis_width} ${chassis_height}"/>
+      </geometry>
+    </collision>
+    <visual name='chassis_visual'>
+      <origin xyz="0 0 0" rpy=" 0 0 0"/>
+      <geometry>
+        <box size="${chassis_length} ${chassis_width} ${chassis_height}"/>
+      </geometry>
+      <material name="Cyan">
+        <color rgba="0 1.0 1.0 1.0"/>
+      </material>
+    </visual>
+  </link>
+
+  <link name='leg_FR'>
+    <collision name='leg_FR_collision'>
+      <origin xyz="0 0 0" rpy="0 0 0"/>
+      <geometry>
+        <box size="${leg_length} ${leg_width} ${leg_height}"/>
+      </geometry>
+    </collision>
+    <visual name='leg_FR_visual'>
+      <origin xyz="0 0 0" rpy="0 0 0"/>
+      <geometry>
+        <box size="${leg_length} ${leg_width} ${leg_height}"/>
+      </geometry>
+    </visual>
+  </link>
+
+  <link name='leg_FL'>
+    <collision name='leg_FL_collision'>
+      <origin xyz="0 0 0" rpy="0 0 0"/>
+      <geometry>
+        <box size="${leg_length} ${leg_width} ${leg_height}"/>
+      </geometry>
+    </collision>
+    <visual name='leg_FL_visual'>
+      <origin xyz="0 0 0" rpy="0 0 0"/>
+      <geometry>
+        <box size="${leg_length} ${leg_width} ${leg_height}"/>
+      </geometry>
+    </visual>
+  </link>
+
+  <link name='leg_BR'>
+    <collision name='leg_BR_collision'>
+      <origin xyz="0 0 0" rpy="0 0 0"/>
+      <geometry>
+        <box size="${leg_length} ${leg_width} ${leg_height}"/>
+      </geometry>
+    </collision>
+    <visual name='leg_BR_visual'>
+      <origin xyz="0 0 0" rpy="0 0 0"/>
+      <geometry>
+        <box size="${leg_length} ${leg_width} ${leg_height}"/>
+      </geometry>
+    </visual>
+  </link>
+
+  <link name='leg_BL'>
+    <collision name='leg_FR_collision'>
+      <origin xyz="0 0 0" rpy="0 0 0"/>
+      <geometry>
+        <box size="${leg_length} ${leg_width} ${leg_height}"/>
+      </geometry>
+    </collision>
+    <visual name='leg_BL_visual'>
+      <origin xyz="0 0 0" rpy="0 0 0"/>
+      <geometry>
+        <box size="${leg_length} ${leg_width} ${leg_height}"/>
+      </geometry>
+    </visual>
+  </link>
+
+  <joint name="leg_FR_joint" type="fixed">
+    <parent link="chassis"/>
+    <child link="leg_FR"/>
+    <origin xyz="${chassis_length/2 - leg_length/2} ${chassis_width/2 - leg_length/2} ${chassis_height/2 - leg_height/2}"/>
+  </joint>
+
+  <joint name="leg_FL_joint" type="fixed">
+    <parent link="chassis"/>
+    <child link="leg_FL"/>
+    <origin xyz="-${chassis_length/2 - leg_length/2} ${chassis_width/2 - leg_length/2} ${chassis_height/2 - leg_height/2}"/>
+  </joint>
+
+  <joint name="leg_BR_joint" type="fixed">
+    <parent link="chassis"/>
+    <child link="leg_BR"/>
+    <origin xyz="${chassis_length/2 - leg_length/2} -${chassis_width/2 - leg_length/2} ${chassis_height/2 - leg_height/2}"/>
+  </joint>
+
+  <joint name="leg_BL_joint" type="fixed">
+    <parent link="chassis"/>
+    <child link="leg_BL"/>
+    <origin xyz="-${chassis_length/2 - leg_length/2} -${chassis_width/2 - leg_length/2} ${chassis_height/2 - leg_height/2}"/>
+  </joint>
+
+  <link name='wheel_FR'>
+    <collision name='wheel_FR_collision'>
+      <origin xyz="0 0 0" rpy="1.5708 0 0"/>
+      <geometry>
+        <cylinder radius="${wheel_radius}" length="${wheel_width}"/>
+      </geometry>
+    </collision>
+    <visual name='wheel_FR_visual'>
+      <origin xyz="0 0 0" rpy="1.5708 0 0"/>
+      <geometry>
+        <cylinder radius="${wheel_radius}" length="${wheel_width}"/>
+      </geometry>
+    </visual>
+  </link>
+
+  <link name='wheel_FL'>
+    <collision name='wheel_FL_collision'>
+      <origin xyz="0 0 0" rpy="1.5708 0 0"/>
+      <geometry>
+        <cylinder radius="${wheel_radius}" length="${wheel_width}"/>
+      </geometry>
+    </collision>
+    <visual name='wheel_FL_visual'>
+      <origin xyz="0 0 0" rpy="1.5708 0 0"/>
+      <geometry>
+        <cylinder radius="${wheel_radius}" length="${wheel_width}"/>
+      </geometry>
+    </visual>
+  </link>
+
+  <link name='wheel_RR'>
+    <collision name='wheel_RR_collision'>
+      <origin xyz="0 0 0" rpy="1.5708 0 0"/>
+      <geometry>
+        <cylinder radius="${wheel_radius}" length="${wheel_width}"/>
+      </geometry>
+    </collision>
+    <visual name='wheel_RR_visual'>
+      <origin xyz="0 0 0" rpy="1.5708 0 0"/>
+      <geometry>
+        <cylinder radius="${wheel_radius}" length="${wheel_width}"/>
+      </geometry>
+    </visual>
+  </link>
+
+  <link name='wheel_RL'>
+    <collision name='wheel_RL_collision'>
+      <origin xyz="0 0 0" rpy="1.5708 0 0"/>
+      <geometry>
+        <cylinder radius="${wheel_radius}" length="${wheel_width}"/>
+      </geometry>
+    </collision>
+    <visual name='wheel_RL_visual'>
+      <origin xyz="0 0 0" rpy="1.5708 0 0"/>
+      <geometry>
+        <cylinder radius="${wheel_radius}" length="${wheel_width}"/>
+      </geometry>
+    </visual>
+  </link>
+
+  <joint name="wheel_FR_joint" type="continuous">
+    <parent link="chassis"/>
+    <child link="wheel_FR"/>
+    <origin xyz="${chassis_length/2-wheel_radius} -${chassis_width/2+wheel_width/2} ${chassis_height - leg_height - wheel_radius*2.1}"
+            rpy="0 0 0"/>
+    <axis xyz="0 1 0"/>
+  </joint>
+
+  <joint name="wheel_FL_joint" type="continuous">
+    <parent link="chassis"/>
+    <child link="wheel_FL"/>
+    <origin xyz="${chassis_length/2-wheel_radius} ${chassis_width/2+wheel_width/2} ${chassis_height - leg_height - wheel_radius*2.1}"
+            rpy="0 0 0"/>
+    <axis xyz="0 1 0"/>
+  </joint>
+
+  <joint name="wheel_RR_joint" type="continuous">
+    <parent link="chassis"/>
+    <child link="wheel_RR"/>
+    <origin xyz="-${chassis_length/2-wheel_radius} -${chassis_width/2+wheel_width/2} ${chassis_height - leg_height - wheel_radius*2.1}"
+            rpy="0 0 0"/>
+    <axis xyz="0 1 0"/>
+  </joint>
+
+  <joint name="wheel_RL_joint" type="continuous">
+    <parent link="chassis"/>
+    <child link="wheel_RL"/>
+    <origin xyz="-${chassis_length/2-wheel_radius} ${chassis_width/2+wheel_width/2} ${chassis_height - leg_height - wheel_radius*2.1}"
+            rpy="0 0 0"/>
+    <axis xyz="0 1 0"/>
+  </joint>
+</robot>
