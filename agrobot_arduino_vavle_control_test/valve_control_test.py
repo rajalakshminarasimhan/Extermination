@@ -25,7 +25,7 @@ if __name__ == '__main__':
     print("Communication Successfully started") 
 
     #defining constant values
-    spraytime = 1 #the time for which the sprayer should spray
+    spraytime = 10 #the time for which the sprayer should spray
     delaytime = 1
     ON = 1
     OFF = 0
@@ -49,7 +49,19 @@ if __name__ == '__main__':
     def reset():
         for valve in valve_array:
             valve.write(OFF)
-    
+    ''' FUNCTION: all_valves()
+        PARAMETERS: spraytime - Time for which it sprays
+        OBJECTIVE: To spray all the valves in sequence, without receiving an array
+        RETURNS: none 
+    '''
+    def all_valves(spraytime):
+        print("The sequential valve spray test has started")
+        for index in range(10):
+            valve_array[index].write(ON)
+            time.sleep(spraytime)       # IN ARDUINO: delay(time)
+            valve_array[index].write(OFF)
+            time.sleep(delaytime)
+
     ''' FUNCTION: turn_on_valve()
         PARAMETERS: array - It is an array of 0/1 which indicates which valve should be turned on
                     spraytime - Time for which it sprays
@@ -103,7 +115,9 @@ if __name__ == '__main__':
     while True: 
         reset()
         arrayReceived = [0,1,0,0,0,0,0,0]   #the array of 0/1 we receive to know which valve to turn on
-        turn_on_valve(arrayReceived)    # using default values for spraytime, delaytime
+        all_valves(spraytime)
+
+        #turn_on_valve(arrayReceived,spraytime,delaytime)    # using default values for spraytime, delaytime
 
         # pulse_valve(arrayReceived)
         # maxvalvestest(valve_array)
